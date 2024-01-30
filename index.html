@@ -164,24 +164,48 @@
   </div>
 </section>
       <!-- contact section -->
+        <!-- contact section -->
       <section id="contact">
-        <div class="container">
-          <div class="contact-container">
-            <div class="contact-box">
-              <h2 class="contact-heading">تواصل معنا</h2>
-              <div class="box-field">
-                <i class="ri-user-line"></i>
-                <input type="text" placeholder="الاسم كامل " />
+        <form id="form">
+          <div class="container">
+            <div class="contact-container">
+              <div class="contact-box">
+                <h2 class="contact-heading">تواصل معنا</h2>
+                <div class="box-field">
+                  <i class="ri-user-line"></i>
+                  <input
+                    type="text"
+                    name="from_name"
+                    id="from_name"
+                    placeholder="الاسم كامل "
+                  />
+                </div>
+                <div class="box-field">
+                  <i class="ri-mail-line"></i>
+                  <input
+                    name="email_id"
+                    placeholder="الايميل"
+                    id="email_id"
+                    type="text"
+                  />
+                </div>
+                <textarea
+                  name="message"
+                  class="text-area"
+                  id="message"
+                  placeholder="الرسالة"
+                ></textarea>
+                <button
+                  class="custom-btn submit-btn"
+                  id="button"
+                  value="Send Email"
+                >
+                  ارسال
+                </button>
               </div>
-              <div class="box-field">
-                <i class="ri-mail-line"></i>
-                <input placeholder="الايميل" type="text" />
-              </div>
-              <textarea class="text-area" placeholder="الرسالة"></textarea>
-              <button class="custom-btn submit-btn">ارسال</button>
             </div>
           </div>
-        </div>
+        </form>
       </section>
     </main>
 
