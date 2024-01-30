@@ -40,3 +40,14 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+
+function openLink() {
+    // حدد رابط التحميل
+    const link = "https://yahalablob.blob.core.windows.net/yahalafileupload/UserFiles/Offer/Yahala Card.apk";
+  
+    // افتح الرابط في نافذة جديدة
+    window.open(link, "_blank");
+  }
+  
+
