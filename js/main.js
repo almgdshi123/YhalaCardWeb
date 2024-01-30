@@ -14,3 +14,29 @@ closeBtn.addEventListener("click",()=>{
 window.addEventListener("scroll",()=>{
 headerEl.classList.toggle("header-active",scrollY>0)
 })
+
+
+
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'service_ei76eu7';
+   const templateID = 'template_0ovetcy';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+    
+      btn.value = 'Send Email';
+      alert('تم الارسال بنجاح!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
